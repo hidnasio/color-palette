@@ -1,0 +1,25 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__content-container {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.page__navbar {
+  line-height: var(--size-navbar);
+  padding-left: var(--size-gutter);
+}
+
+.page__content-sidebar {
+  display: flex;
+  flex: 0 0 var(--size-sidebar);
+}
+
+.page__content {
+  flex: 1 0 var(--size-content);
+  background-color: #363f45;
+}

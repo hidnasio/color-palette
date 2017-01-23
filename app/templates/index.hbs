@@ -1,0 +1,11 @@
+<nav class="page__navbar navbar">
+  {{link-to 'Page Object Sandbox' 'index' class="navbar__title"}}
+</nav>
+<section class="page__content-container">
+  <aside class="page__content-sidebar">
+    {{color-form}}
+  </aside>
+  <article class="page__content">
+    {{color-list colors=model viewColor=(action 'viewColor')}}
+  </article>
+</section>

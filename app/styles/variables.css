@@ -1,0 +1,9 @@
+:root {
+  --base-size: 16;
+  --color-background: #3e464c;
+  --color-foreground: #ffd54f;
+  --size-gutter: 10px;
+  --size-navbar: calc(60rem/var(--base-size));
+  --size-sidebar: calc(250rem/var(--base-size));
+  --size-content: calc(100% - var(--size-sidebar));
+}

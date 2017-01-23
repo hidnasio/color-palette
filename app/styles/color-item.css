@@ -1,0 +1,36 @@
+.color-item {
+  flex: 0 0 25%;
+  padding: var(--size-gutter);
+  min-height: 150px;
+  position: relative;
+  cursor: pointer;
+}
+
+.color-item__name {
+  text-transform: uppercase;
+}
+
+.color-item__controls {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.color-item-action {
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 2px 0;
+}
+
+.color-item-action:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.color-item--dark {
+  color: #333;
+}
+
+.color-item--light {
+  color: white;
+}

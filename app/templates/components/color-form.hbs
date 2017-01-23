@@ -1,0 +1,48 @@
+<label class="color-form__field-name" for="name">Name:</label>
+{{input
+  class="color-form__control"
+  name="name"
+  id="name"
+  type="text"
+  tabindex="1"
+  value=color.name
+}}
+{{#if isInvalidName}}
+  <div class="color-form__error">Please enter a name</div>
+{{/if}}
+
+<label class="color-form__field-name" for="color">Color:</label>
+{{input
+  class="color-form__control"
+  name="color"
+  id="color"
+  type="text"
+  tabindex="2"
+  placeholder="#rrggbb"
+  value=color.code
+}}
+{{#if isInvalidColor}}
+  <div class="color-form__error">
+    Please enter a valid color in the format #rrggbb
+  </div>
+{{/if}}
+
+<label class="color-form__field-name" for="text">Text</label>
+{{textarea
+  class="color-form__control color-form__control--textarea"
+  name="text"
+  id="text"
+  tabindex="3"
+  value=color.description
+}}
+
+<label class="color-form__field-name" for="style">
+  Foreground
+</label>
+
+<label class="" for="style">
+{{input type="checkbox" name="style" checked=isDark id="style" tabindex="4"}}
+dark
+</label>
+
+<button class="color-form__button" tabindex="5" {{action 'add' color}} disabled={{if isValid '' 'disabled'}}>Add</button>

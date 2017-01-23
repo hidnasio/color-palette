@@ -1,0 +1,10 @@
+<div class="color-item__name">
+  {{item.name}}
+</div>
+
+{{#if showControls}}
+  <div class="color-item__controls">
+    {{color-item-action '&plusb;' (action 'view')}}
+    {{color-item-action '&otimes;' (action 'delete')}}
+  </div>
+{{/if}}
