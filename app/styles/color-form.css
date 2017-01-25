@@ -1,22 +1,22 @@
 .color-form {
-  padding: 1rem;
+  padding: calc(16 * var(--size));
   background: #363f45;
   color: white;
-  border-top: .1rem solid #333;
+  border-top: var(--size) solid #333;
+  font-size: calc(20 * var(--size));
 }
 
 .color-form__control {
   appearance: none;
   background-color: white;
-  border-radius: .1rem;
-  border: .1rem solid white;
+  border-radius: calc(2 * var(--size));
+  border: var(--size) solid white;
   box-shadow: none;
   box-sizing: inherit;
-  height: 2.8rem;
-  padding: .6rem 1.0rem;
+  height: calc(45 * var(--size));
+  padding: calc(8 * var(--size)) calc(16 * var(--size));
   display: block;
   width: 100%;
-  font-size: 1.2rem;
 }
 
 .color-form__control:focus {
@@ -24,44 +24,31 @@
   outline: 0;
 }
 
-.color-form__control--select:focus {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
-  padding-right: 3.0rem;
-}
-
-.color-form__control--select:focus {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
-}
-
 .color-form__control--textarea {
-  font-family: inherit;
   resize: none;
-  min-height: 6.5rem;
-  font-size: 1rem;
+  min-height: calc(80 * var(--size));
 }
 
 .color-form__field-name {
   display: block;
-  font-size: 1rem;
-  font-weight: 100;
-  margin-top: 1rem;
-  margin-bottom: .8rem;
+  margin-top: calc(20 * var(--size));
+  margin-bottom: calc(16 * var(--size));
 }
 
 .color-form__field-name:first-child {
-  margin-top: 0;
+  margin-top: calc(10 * var(--size));
 }
 
 .color-form__button {
   display: block;
   width: 100%;
-  height: 2.8rem;
-  border-radius: .1rem;
+  height: calc(45 * var(--size));
+  border-radius: calc(2 * var(--size));
   box-shadow: none;
   border: none;
-  margin-top: 2rem;
+  margin-top: ;
   font-family: inherit;
-  font-size: 1.2rem;
+  margin-top: calc(20 * var(--size));
 }
 
 .color-form__button:hover {
@@ -69,7 +56,7 @@
 }
 
 .color-form__error {
-  font-size: 1rem;
-  margin-top: .5rem;
+  font-size: calc(16 * var(--size));
+  margin-top: calc(10 * var(--size));
   color: #f34235;
 }

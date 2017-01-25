@@ -1,7 +1,7 @@
 .color-item {
   flex: 0 0 25%;
   padding: var(--size-gutter);
-  min-height: 150px;
+  min-height: calc(150 * var(--size));
   position: relative;
   cursor: pointer;
 }
@@ -12,15 +12,15 @@
 
 .color-item__controls {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: calc(5 * var(--size));
+  right: calc(5 * var(--size));
 }
 
 .color-item-action {
   display: inline-block;
-  font-size: 20px;
+  font-size: calc(20 * var(--size));
   cursor: pointer;
-  padding: 4px 2px 0;
+  padding: calc(4 * var(--size)) calc(2 * var(--size)) 0;
 }
 
 .color-item-action:hover {

@@ -1,9 +1,13 @@
 :root {
   --base-size: 16;
+
   --color-background: #3e464c;
   --color-foreground: #ffd54f;
-  --size-gutter: 10px;
-  --size-navbar: calc(60rem/var(--base-size));
-  --size-sidebar: calc(250rem/var(--base-size));
+
+  --size: calc(1rem / var(--base-size));
+  --size-full: 100%;
+  --size-gutter: calc(10 * var(--size));
+  --size-navbar: calc(60 * var(--size));
+  --size-sidebar: calc(250 * var(--size));
   --size-content: calc(100% - var(--size-sidebar));
 }
