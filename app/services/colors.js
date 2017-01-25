@@ -97,7 +97,7 @@ const colors = [
     icon: 'tick',
     description: 'AMBER proved that we are alone in the universe. We weren\'t before his first space expedition.',
     code: '#fec006',
-    style: 'light'
+    style: 'dark'
   }),
   Ember.Object.create({
     name: 'ORANGE',

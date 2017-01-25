@@ -8,3 +8,11 @@
   text-align: center;
   cursor: pointer;
 }
+
+.color-detail--light {
+  color: white;
+}
+
+.color-detail--dark {
+  color: #333;
+}
