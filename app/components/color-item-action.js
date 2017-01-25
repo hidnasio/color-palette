@@ -10,4 +10,4 @@ export default Ember.Component.extend({
 
 }).reopenClass({
   positionalParams: ['icon', 'action']
-});;
+});

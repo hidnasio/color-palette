@@ -1,7 +1,5 @@
 import Ember from 'ember';
 
-const { inject } = Ember;
-
 const colors = [
   Ember.Object.create({
     name: 'RED',
@@ -158,7 +156,6 @@ export default Ember.Service.extend({
   },
 
   add(color) {
-    console.log(color);
     this.get('colors').pushObject(color);
   },
 

@@ -8,7 +8,7 @@ export default Ember.Component.extend({
   attributeBindings: ['style'],
 
   style: computed('color.code', function() {
-    return `background-color:${this.get('color.code')}`;
+    return Ember.String.htmlSafe(`background-color:${this.get('color.code')}`);
   }),
 
   click() {
@@ -16,4 +16,4 @@ export default Ember.Component.extend({
   }
 }).reopenClass({
   positionalParams: ['color']
-});;
+});
