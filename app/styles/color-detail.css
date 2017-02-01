@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
 
-  font-size: calc(60 * var(--size));
+  font-size: var(--size-font-big);
   text-align: center;
   cursor: pointer;
 }

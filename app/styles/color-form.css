@@ -3,7 +3,7 @@
   background: #363f45;
   color: white;
   border-top: var(--size) solid #333;
-  font-size: calc(20 * var(--size));
+  font-size: var(--size-font);
 }
 
 .color-form__control {
@@ -14,7 +14,7 @@
   box-shadow: none;
   box-sizing: inherit;
   height: calc(45 * var(--size));
-  padding: calc(8 * var(--size)) calc(16 * var(--size));
+  padding: calc(10 * var(--size));
   display: block;
   width: 100%;
 }
@@ -32,7 +32,7 @@
 .color-form__field-name {
   display: block;
   margin-top: calc(20 * var(--size));
-  margin-bottom: calc(16 * var(--size));
+  margin-bottom: calc(10 * var(--size));
 }
 
 .color-form__field-name:first-child {
@@ -56,7 +56,7 @@
 }
 
 .color-form__error {
-  font-size: calc(16 * var(--size));
+  font-size: var(--size-font-small);
   margin-top: calc(10 * var(--size));
   color: #f34235;
 }

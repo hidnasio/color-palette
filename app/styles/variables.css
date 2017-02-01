@@ -5,9 +5,14 @@
   --color-foreground: #ffd54f;
 
   --size: calc(1rem / var(--base-size));
+
   --size-full: 100%;
   --size-gutter: calc(10 * var(--size));
   --size-navbar: calc(60 * var(--size));
   --size-sidebar: calc(250 * var(--size));
   --size-content: calc(100% - var(--size-sidebar));
+
+  --size-font: calc(20 * var(--size));
+  --size-font-small: calc(16 * var(--size));
+  --size-font-big: calc(60 * var(--size));
 }
